@@ -36,10 +36,10 @@ const apiUrl = 'http://localhost:3000/encender/';
     })
     .then(response => {
       if (!response.ok) {
-        throw new Error(`Error al apagar ${id}`);
+        throw new Error(`Error al apagar ${motor}`);
       }
       
-      console.log(`${id} apagado con éxito`);
+      console.log(`${motor} apagado con éxito`);
     })
     .catch(error => {
       console.error(error.message);

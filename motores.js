@@ -59,7 +59,7 @@ app.post('/encender/:motor', (req, res) => {
  
 });
 
-app.post('/apagar/', (req, res) => {
+app.post('/apagar/:motor', (req, res) => {
   const motor = req.params.motor;
   //console.log(motor);
   
