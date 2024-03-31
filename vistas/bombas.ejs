@@ -1,0 +1,29 @@
+
+<%- include("template/cabecera",{tituloweb: "ENCENDIDO DE BOMBAS"}) %>
+<%- include("template/navbar") %>
+
+  <CENTER> <h1>Control de Motores</h1> </CENTER>
+  <div class="content">
+    <div class="card-grid">
+      <div class="card">
+        <img src="imagenes/motor.jpg"width="150" height="150">
+        <button onclick="encenderMotor('motor1')">Encender Motor 1</button>
+        <button id="apagar" onclick="apagarMotor('motor1')">Apagar Motor 1</button>
+      </div>
+      <div class="card">
+        <img src="imagenes/motor.jpg"width="150" height="150">
+        <button onclick="encenderMotor('motor2')">Encender Motor 2</button>
+        <button id="apagar" onclick="apagarMotor('motor2')">Apagar Motor 2</button>
+      </div>
+      <div class="card">
+        <img src="imagenes/motor.jpg"width="150" height="150">
+        <button onclick="encenderMotor('motor3')">Encender Motor 3</button>
+        <button id="apagar" onclick="apagarMotor('motor3')">Apagar Motor 3</button>
+      </div>
+    </div>  
+  </div>
+  <%- include("template/footer") %>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
+</html>
+
