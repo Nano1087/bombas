@@ -54,7 +54,7 @@ app.post('/encender/:motor', (req, res) => {
       
   
   } else {
-    res.status(400).render('404');
+    res.status(400).send('404');
   }
  
 });
@@ -71,7 +71,7 @@ app.post('/apagar/', (req, res) => {
       
   
   } else {
-    res.status(400).render('404');
+    res.status(400).send('404');
   }
  
 });
