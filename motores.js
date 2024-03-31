@@ -22,6 +22,9 @@ app.use(express.static('./public'));
 app.use(express.json());
 //app.use(express.urlencoded({extended: true}));
 app.use(cookieParser())
+app.use((req,res)=>{
+  res.status(404).render("404")
+});
 
 
 //rutas o endpoints
