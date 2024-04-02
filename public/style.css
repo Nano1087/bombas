@@ -1,3 +1,11 @@
+:root{
+  --primary-color:#4f4aa6;
+  --secondary-color: #48ca95;
+  --bg-color: #f7f7f7;
+  --light-color:#fff;
+
+}
+
 
 .Encabezado {
   text-align: center;
@@ -6,8 +14,13 @@
   max-width: 1200px;
   margin: 0 auto; 
   display: grid; 
+  min-height:  90vh;
+}
   /*background-color: #d0d0d0;*/
 
+  .title-section{
+    font-size: 36px;
+    margin-bottom: 25px;
 }
   
     body {
@@ -26,12 +39,12 @@
     }
     .content { 
       padding: 5%;
-      background-image: url(/imagenes/img_fondo.jpg);
+      background-image: url(/imagenes/fondo_lluvia.jpg);
       /*background-color:#F0B823;*/
     }
 
     
-    .card-grid { 
+    /* .card-grid { 
       text-align: center;
       max-width: 1200px; 
       margin: 0 auto; 
@@ -39,15 +52,38 @@
       grid-gap: 2rem; 
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
      
-    }
-    .card { 
+    } */
+    /* .card { 
       /*background-color:rgb(118, 122, 53);*/ 
-      background-color:#F0B823;
+      /* background-color:#F0B823; 
+      max-width: 350px;
       box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
       align-items: center;
+      border: 10px solid var(--secondary-color);
+      border-radius: 10%;
       
-    }
+    } */
 
+    .cards{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      padding-top: 25px;
+      padding-bottom: 60px;
+      flex-wrap: wrap;
+  }
+
+ .card{
+  max-width: 350px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  margin: 5px;
+}
     button {
       background-color: #4CAF50;
       color: white;
