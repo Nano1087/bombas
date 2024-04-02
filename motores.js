@@ -22,20 +22,18 @@ app.use(express.static('./public'));
 app.use(express.json());
 //app.use(express.urlencoded({extended: true}));
 app.use(cookieParser())
-app.use((req,res)=>{
-  res.status(404).render("404")
-});
+
 
 
 //rutas o endpoints
-app.get('/', function (req, res,next) {
+app.get('/',authorization.soloAdmin, function (req, res,) {
   res.render('login',{})
-  next();
+
 })
-app.get('/bombas/',authorization.soloPublico, function (req, res) {
+app.get('/bombas/',authorization.soloAdmin, function (req, res) {
   res.render('bombas',{})
 })
-app.get('/index/', function (req, res) {
+app.get('/index/',authorization.soloAdmin, function (req, res) {
   res.render('index')
 })
 
@@ -83,5 +81,7 @@ app.post('/respuestaesp8266/', function (req, res) {
   console.log(message)
 })
 
-
+app.use((req,res)=>{
+  res.status(404).render("404")
+});
 
