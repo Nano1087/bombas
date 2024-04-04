@@ -66,4 +66,4 @@ module.exports ={
   usuarios: []
 } */
 module.exports.login=login;
-//module.exports.register=register;
+//module.exports= usuarios;
