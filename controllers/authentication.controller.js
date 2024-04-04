@@ -37,9 +37,10 @@ console.log('login no es correcto');
     }
     res.cookie("jwt",token,cookieOption);
     res.send({status:"ok",message:"Usuario loggeado",redirect:"/bombas"});
+    //res.render("bombas")
 }
 
-/*async function register(req,res){
+/* async function register(req,res){
   const user = req.body.user;
   const password = req.body.password;
   const email = req.body.email;
@@ -58,10 +59,11 @@ console.log('login no es correcto');
   usuarios.push(nuevoUsuario);
   console.log(usuarios);
   return res.status(201).send({status:"ok",message:`Usuario ${nuevoUsuario.user} agregado`,redirect:"/"})
-}*/
+}
 
 
 module.exports ={
   usuarios: []
-}
+} */
 module.exports.login=login;
+//module.exports= usuarios;

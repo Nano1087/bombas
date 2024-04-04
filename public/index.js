@@ -1,8 +1,13 @@
-document.getElementsByTagName("button")[0].addEventListener("click",()=>{
-  document.cookie ='jwt=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-  document.location.href = "http:localhost:300"
-})
 
+
+/* document.getElementsByTagName("button")[0].addEventListener("click",()=>{
+  document.cookie ='jwt=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  document.location.href = "/"
+}) */
+function cerrarsesion(login){
+  document.cookie ='jwt=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  document.location.href = "/"
+}
 
 
 const apiUrl = 'http://localhost:3000/encender/';
