@@ -66,4 +66,4 @@ module.exports ={
   usuarios: []
 } */
 module.exports.login=login;
-//module.exports= usuarios;
+module.exports.usuarios= usuarios;

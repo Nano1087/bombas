@@ -1,14 +1,14 @@
 //const { expressjwt: jwt } = require("express-jwt");
-//const usuarios = require ("./../controllers/authentication.controller.js");
+const {usuarios} = require ("./../controllers/authentication.controller.js");
 const jsonwebtoken = require("jsonwebtoken");
 const login = require ("./../controllers/authentication.controller.js");
 const register = require ("./../controllers/authentication.controller.js");
 const dotenv = require('dotenv')
 dotenv.config();
-const usuarios = [{
+/* const usuarios = [{
   user: "darwin",
   password: "$2a$05$nLY2It8riku2vwwDIINdgO/XIyPXRg1Gn9LFgnhwKqC4TwcAwEUL2"
-}]
+}] */
 
 
 
