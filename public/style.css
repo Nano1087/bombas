@@ -97,6 +97,7 @@
   #apagar {
     background-color: red;
     margin: 5px;
+    display: none;
     }
     #apagar:hover {
       background-color:blue;

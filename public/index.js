@@ -4,14 +4,27 @@
   document.cookie ='jwt=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
   document.location.href = "/"
 }) */
+
+const encender = document.getElementById('encender');
+console.log(encender);
+const apagar = document.getElementById('apagar');
+const apiUrl = 'http://localhost:3000/encender/';
+const apiUrl2 = 'http://localhost:3000/apagar/';
+
 function cerrarsesion(login){
   document.cookie ='jwt=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
   document.location.href = "/"
 }
 
 
-const apiUrl = 'http://localhost:3000/encender/';
+encender.addEventListener('click',encenderMotor);
+apagar.addEventListener('click',apagarMotor);
+
+
   function encenderMotor(motor) {
+    apagar.style.display = "block";
+      encender.style.display= "none";
+      apagar.style.backgroundColor= "red"
     fetch(apiUrl + motor,{
       method: 'POST',
       headers: {
@@ -30,8 +43,11 @@ const apiUrl = 'http://localhost:3000/encender/';
       console.error(error.message);
     });
   }
-  const apiUrl2 = 'http://localhost:3000/apagar/';
+  
   function apagarMotor(motor) {
+    encender.style.display = "block";
+    apagar.style.display= "none";
+    encender.style.backgroundColor= "green"
     fetch(apiUrl2 + motor,{
       method: 'POST',
       headers: {
