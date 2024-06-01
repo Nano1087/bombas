@@ -5,26 +5,37 @@
  
   <div class="content">
     <CENTER> <h1 class="title-section">Control de Bombas</h1> </CENTER>
+    
     <div class="cards">
       <div class="card">
-        <img src="imagenes/motor.jpg"width="150" height="150">
-        <button id="encender"><i class="bi bi-power"></i></button>
-        <button id="apagar"><i class="bi bi-stop-circle"></i></button>
+        <h2>MOTOR 01</h2>
+        <img src="imagenes/motor.jpg"width="150" height="150" class="card-img"> 
+        <button onclick="encenderMotor('motor1')" id="encender"> <i class="bi bi-power"> </i> </button>
+        <button onclick="apagarMotor('motor1')" id="apagar"> <i class="bi bi-stop-circle"> </i> </button>
       </div>
+
       <div class="card">
-        <img src="imagenes/motor.jpg"width="150" height="150">
-        <button onclick="encenderMotor('motor2')">Encender Motor 2</button>
-        <button id="apagar" onclick="apagarMotor('motor2')">Apagar Motor 2</button>
+        <h2>MOTOR 02</h2>
+        <img src="imagenes/motor.jpg"width="150" height="150" class="card-img"> 
+        <button onclick="encenderMotor('motor2')" id="encender"> <i class="bi bi-power"> </i> </button>
+        <button onclick="apagarMotor('motor2')" id="apagar"> <i class="bi bi-stop-circle"> </i> </button>
       </div>
+      
+    
       <div class="card">
-        <img src="imagenes/motor.jpg"width="150" height="150">
-        <button onclick="encenderMotor('motor3')">Encender Motor 3</button>
-        <button id="apagar" onclick="apagarMotor('motor3')">Apagar Motor 3</button>
+        <h2>MOTOR 03</h2>
+        <img src="imagenes/motor.jpg"width="150" height="150" class="card-img">
+        <button onclick="encenderMotor('motor3')"> <i class="bi bi-power"></i></button>
+        <button id="apagar" onclick="apagarMotor('motor3')"> <i class="bi bi-stop-circle"></button>
       </div>
+
+     
+      
     </div>  
+  
   </div>
   <%- include("template/footer") %>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+ <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> -->
   
 </html>
 

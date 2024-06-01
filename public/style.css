@@ -1,8 +1,9 @@
 :root{
-  --primary-color:#4f4aa6;
+  --primary-color:#215291;
   --secondary-color: #48ca95;
   --bg-color: #f7f7f7;
   --light-color:#fff;
+  --card-color:#00000000
 
 }
 
@@ -16,31 +17,70 @@
   display: grid; 
   min-height:  90vh;
 }
+  /* menu de navegacion */
+  #main-menu{
+    margin-top: 2px;
+    background-color: var(--primary-color);
+    padding-left: 2px;
+   
+  }
+
+#main-menu .nav-bar { 
+  list-style:none; 
+  margin: 1px 0px 0px; 
+}
+#main-menu .nav-bar li { 
+  display:inline; 
+  padding:0 10px; }
+
+#main-menu .nav-bar li a {
+  text-decoration: none;
+  padding-left: 25px;
+  text-transform: uppercase;
+  color: #333;
+	text-shadow: 1px 1px 1px #ccc;
+}
+
+.nav-button-sesion{
+  margin-left: 50%;
+}
+
+
+
+
   /*background-color: #d0d0d0;*/
 
   .title-section{
     font-size: 36px;
     margin-bottom: 25px;
+    color: #f7f7f7;
 }
   
     body {
       font-family: 'Arial', sans-serif;
-      margin: 20px;
-      text-align: center;
+      margin: 2px 2px 2px 2px;
       
+      
+    }
+    .card-img{
+      background-color: var(--card-color);
+      opacity: 0.7;
     }
     .topnav { 
       overflow: hidden; 
       background-color: #b0b4c0;
     }
 
-    h1 {
-      color: #333;
-    }
+    
     .content { 
-      padding: 5%;
-      background-image: url(/imagenes/fondo_lluvia.jpg);
+      margin-top: 1px;
+      padding: 2%;
+      background: url(imagenes/circuit_board.jpg)no-repeat center center/ cover;
       /*background-color:#F0B823;*/
+    }
+
+    h2{
+      color: #f7f7f7;
     }
 
     
@@ -53,16 +93,7 @@
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
      
     } */
-    /* .card { 
-      /*background-color:rgb(118, 122, 53);*/ 
-      /* background-color:#F0B823; 
-      max-width: 350px;
-      box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
-      align-items: center;
-      border: 10px solid var(--secondary-color);
-      border-radius: 10%;
-      
-    } */
+    
 
     .cards{
       display: flex;
@@ -70,11 +101,14 @@
       align-content: center;
       padding-top: 25px;
       padding-bottom: 60px;
-      flex-wrap: wrap;
+      /* flex-wrap: wrap;
+   */
   }
 
- .card{
-  max-width: 350px;
+  .card{
+  background-color: var(--card-color);
+  width: 150px;
+  height: 300px;
   border: 1px solid var(--secondary-color);
   border-radius: 10%;
   display: flex;
@@ -83,6 +117,7 @@
   justify-content: center;
   padding: 30px;
   margin: 5px;
+ 
 }
     button {
       background-color: #4CAF50;
@@ -97,7 +132,7 @@
   #apagar {
     background-color: red;
     margin: 5px;
-    display: none;
+    display: inline-block;
     }
     #apagar:hover {
       background-color:blue;
