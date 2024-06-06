@@ -66,7 +66,7 @@
   
     body {
       font-family: 'Arial', sans-serif;
-      margin: 2px 2px 2px 2px;
+      margin: 2px 2px 0px 2px;
       
       
     }
@@ -82,6 +82,7 @@
     
     .content { 
       margin-top: 1px;
+      margin-bottom: 0px;
       padding: 2%;
       background: url(imagenes/circuit_board.jpg)no-repeat center center/ cover;
       /*background-color:#F0B823;*/
@@ -90,17 +91,6 @@
     h2{
       color: #f7f7f7;
     }
-
-    
-    /* .card-grid { 
-      text-align: center;
-      max-width: 1200px; 
-      margin: 0 auto; 
-      display: grid; 
-      grid-gap: 2rem; 
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-     
-    } */
     
 
     .cards{
@@ -123,7 +113,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 20px;
   margin: 5px;
  
 }
@@ -131,7 +121,7 @@
       background-color: #4CAF50;
       color: white;
       padding: 10px 20px;
-      margin: 10px;
+      margin: 8px;
       border: none;
       border-radius: 5px;
       cursor: pointer;
@@ -159,7 +149,7 @@
 
     footer{
       background-image: url('./imagenes/footer.jpg');
-      background-size: cover;
+     /*  background-size: cover; */
       background-repeat: no-repeat;
       display: flex;
       justify-content:center;
@@ -184,3 +174,40 @@
       grid-gap: 2rem; 
     
     }
+
+   /*  Responsive*/
+   @media(max-width: 800px){
+    .content{
+        flex-direction: column;
+        background: url(imagenes/fondo_1.jpg)no-repeat center center/ cover;
+    }
+   
+
+
+    .title-section{
+        font-size: 18px;
+        
+    }
+   
+    .content-img{
+        margin: 50px 10px;
+        width: 95%;
+        height: 100%;
+        max-width: 400px;
+    }
+
+    .cards{
+      flex-direction: column;
+      padding-left: 25%; 
+      padding-top: 1px;
+  }
+    .text-card{
+      font-size: 18px;
+
+  }
+  .card{
+    height: 280px;
+  }
+ 
+
+}
