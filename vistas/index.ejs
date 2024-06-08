@@ -2,12 +2,12 @@
 <%- include("template/navbar") %>  
         <div class="content">
           <CEnter><h2>Datos enviados por la esp8266</h2></CEnter>
-          <div class="cards">
-            <div class="card">
-              <UL>
-                <li>RED WIFFI</li>
-                <LI>IP</LI>
-                <LI>NUMERO DE TABLERO</LI>
+          <div class="cards" id="cards-datos">
+            <div class="card" id="card-datos">
+              <UL  id="datos">
+                <li>RED WIFFI: nombre de red </li>
+                <li>IP: 0.0.0.0</li>
+                <li>TABLERO N:1</li>
               </UL>
             </div>
           </div>
